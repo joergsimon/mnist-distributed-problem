@@ -60,7 +60,7 @@ def train_ppd(pnum, config, args):
     # Create Dataloader of the above tensor with batch size = 32
     trainloader = DataLoader(train, batch_size=128, sampler=train_sampler, shuffle=(train_sampler is None),
                              pin_memory=True, num_workers=0)
-    validloader = DataLoader(valid, batch_size=128, sampler=valid_sampler, shuffle=(train_sampler is None),
+    validloader = DataLoader(valid, batch_size=128, sampler=valid_sampler, shuffle=(valid_sampler is None),
                              pin_memory=True, num_workers=0)
 
     # Building Our Mode
