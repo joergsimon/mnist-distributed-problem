@@ -10,11 +10,16 @@ import sys
 sys.path.append("../")
 print(torch.__version__)
 
+
 seed = 42
 random.seed(seed)
 np.random.seed(seed)
 torch.manual_seed(seed)
 torch.random.manual_seed(seed)
+if torch.backends.cudnn.enabled:
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+
 
 #Declare transform to convert raw data to tensor
 transforms = transforms.Compose([
