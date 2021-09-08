@@ -1,3 +1,6 @@
+# Solved:
+A small typo in some number is slipped in making the two versions different. You can go and try to find it yourself for fun or look at https://stackoverflow.com/questions/69100602/hello-world-aka-mnist-with-feed-forward-gets-less-accuracy-in-comparison-of-pla . While I feel dump now it is probably a fun example for what often happens in such projects....
+
 # mnist-distributed-problem
 This is a super small repository demonstrating a Problem with DistributedDataParallel (DDP) from pytorch. 
 A three layer feed forward neural network is trained with MNIST with and without data parallel with the same hyper parameters.  
